@@ -1,0 +1,6 @@
+{
+  "core_env": "production",
+  "core_db_host": "localhost",
+  "api_url": "http://core-asi-os.local/api",
+  "max_load": 100
+}
