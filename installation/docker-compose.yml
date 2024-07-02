@@ -1,1 +1,21 @@
+version: '3.8'
+
+services:
+  core-db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: coreuser
+      POSTGRES_PASSWORD: corepass
+      POSTGRES_DB: coredb
+    volumes:
+      - core-db-data:/var/lib/postgresql/data
+
+  core-service:
+    build: .
+    environment:
+      - CORE_ENV=production
+      - CORE_DB_HOST=core-db
+
+volumes:
+  core-db-data:
 
