@@ -1,6 +1,3 @@
-### 2. **Installation Guide (`installation-guide.md`)**
-
-```markdown
 # Installation Guide for CORE ASI OS Model
 
 ## Prerequisites
